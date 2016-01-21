@@ -1,5 +1,5 @@
 這是用 React/Redux 寫的政黨票計算機
-原作請參考: http://g0v.github.io/partyvote2016/? (這是用 Angular 寫的)
+[原作請參考](http://g0v.github.io/partyvote2016/?) (這是用 Angular 寫的)
 
 # 執行
 直接打開 index.html 即可
