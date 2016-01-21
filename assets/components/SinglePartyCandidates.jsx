@@ -1,5 +1,9 @@
+// dependencies
 import React, { PropTypes } from 'react';
 import staticData from '../static.js'
+
+// styles
+require('../scss/SinglePartyCandidates.scss')
 
 export var SinglePartyCandidates = React.createClass({
 
@@ -19,7 +23,7 @@ export var SinglePartyCandidates = React.createClass({
 					candidates.map((candidate, idx)=>{
 						let classname = idx < electedNum ? "candidate elected" : "candidate";
 
-						return  <span className={classname}>{candidate}</span>
+						return  <span className={classname} key={idx}>{candidate}</span>
 					})
 				}
 			</div>

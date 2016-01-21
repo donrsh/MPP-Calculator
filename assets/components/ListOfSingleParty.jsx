@@ -11,7 +11,7 @@ export const ListOfSingleParty = React.createClass({
 		partyNames: PropTypes.arrayOf(PropTypes.string).isRequired
 	},
 
-	render: function( props ){
+	render: function(){
 
 		const { partyNames } = this.props
 

@@ -1,0 +1,28 @@
+.addParty{
+	width: 80%;
+	padding: 20px;
+	margin: 50px auto 0;
+	border-radius: 10px;
+	overflow: auto;
+
+	background-color: #eee;
+
+	.addParty_icon i{
+		font-size: 100px;
+
+		float: left;
+		display: inline-block;
+
+		transition: text-shadow 0.3s;
+
+		&:hover{
+			text-shadow: 0 0 10px #000;
+		}
+	}
+
+	.addParty_hiddenPartiesList {
+		width: calc(100% - 120px);
+		display: inline-block;
+		float: right;
+	}
+}

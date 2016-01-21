@@ -9,7 +9,7 @@ export var TotalBar = React.createClass({
 		residueVote: PropTypes.number.isRequired,		
 	},
 
-	render: function( props ){
+	render: function(){
 
 		const { residueVote } = this.props
 

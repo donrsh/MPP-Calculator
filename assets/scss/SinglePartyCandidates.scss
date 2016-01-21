@@ -1,0 +1,20 @@
+.singlePartyCandidates{
+	color: #ccc;
+	background-color: #eee;
+
+	padding: 8px;
+	border-radius: 10px;
+
+	.candidate{
+
+		padding: 0px 10px;
+
+		display: inline-block;
+	
+		&.elected{
+			color: #666;
+		}
+	
+	}
+
+}

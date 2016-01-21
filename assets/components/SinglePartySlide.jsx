@@ -8,24 +8,28 @@ export var SinglePartySlide = React.createClass({
 		partyName: PropTypes.string.isRequired,
 		vote: PropTypes.number.isRequired,
 		voteLimit: PropTypes.number.isRequired,
-		onSlideMove: PropTypes.func.isRequired
+		dispatch_CHANGE_VOTE: PropTypes.func.isRequired
 	},
 
-	render: function( props ){
+	render: function(){
 
-		const { partyName, vote, voteLimit, onSlideMove } = this.props;
+		const { partyName, vote, voteLimit, dispatch_CHANGE_VOTE } = this.props;
 
 		return (
 			<div className="singlePartyBar">
 				<Slider
-					ref = { c => this.slider = c }
-					defaultValue = { vote }
-					onChange = { () => {
+					ref={ c => this.slider = c }
+					defaultValue={vote}
+					value={vote}
+					step={0.0001}
+					onChange={ () => {
 						if(this.slider.getValue() <= voteLimit)
-							onSlideMove(partyName, this.slider.getValue());
+							dispatch_CHANGE_VOTE(partyName, this.slider.getValue());
+						else{
+							this.slider.setValue(vote)
+						}
 					}}
 				/>
-				<div> {vote} </div>
 			</div>
 		)
 	}

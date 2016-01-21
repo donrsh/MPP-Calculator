@@ -1,0 +1,32 @@
+header{
+	background: linear-gradient(to bottom right, #97d38d 0%,#edd88e 50%,#79c8ea 100%);
+	overflow: auto;
+	padding: 60px 0;
+}
+
+#title{
+	box-sizing: border-box;
+	width: 50%;
+	padding-right: 80px;
+	
+	float: left;
+	
+	color: white;
+	font-size: 100px;
+	line-height: 1.2;
+	text-align: right;
+}
+
+#totalVote{
+	width: 50%;
+	margin-top: 120px;
+
+	color: rgba(0,0,0,0.3);
+	font-size: 32px;
+	float: right;		
+}
+
+#totalVoteNumber{
+	font-size: 50px;
+	font-weight: 700;
+}
